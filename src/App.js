@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,12 @@ function App() {
 }
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const storedNumber = localStorage.getItem("number");
+  const [count, setCount] = useState(Number(storedNumber));
+
+  useEffect(() => {
+    localStorage.setItem("number", count);
+  }, [count]);
 
   function handleSubtract() {
     setCount((count) => count - 1);
