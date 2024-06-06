@@ -35,6 +35,8 @@
 }
 
 .reset {
-  /* display: inline-block; */
-  margin-left: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }

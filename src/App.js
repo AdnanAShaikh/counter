@@ -33,9 +33,11 @@ function Counter() {
           +
         </button>
       </div>
-      <button className="button reset" onClick={handleReset}>
-        reset
-      </button>
+      <div className="reset">
+        <button className="button reset" onClick={handleReset}>
+          reset
+        </button>
+      </div>
     </>
   );
 }
