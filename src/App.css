@@ -25,3 +25,16 @@
   color: #f6e8ea;
   font-weight: 700;
 }
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+}
+
+.reset {
+  /* display: inline-block; */
+  margin-left: 45rem;
+}
